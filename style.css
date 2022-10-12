@@ -1,0 +1,16 @@
+body {
+    background-color: #0f0f0f;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1 {
+    color: magenta;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+}
+h2 {
+    color: yellow;
+}
+a {
+    color: orchid;
+}
