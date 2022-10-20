@@ -3,11 +3,11 @@
     <head>    
      <meta charset="utf-8">     
      <title>MD190A HTML tutorial 2</title>
-     <!--<link rel="stylesheet" href="style.css">   
-     <link rel="preconnect" href="https://fonts.googleapis.com">-->
 
+<!-- Here I am including fonts from Google Fonts (font.google.com) using hte code they provide -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+<!-- The previous tutorial used inline style, which meant adding color information to each tag. Here I am using internal style. This must be placed within the <head> element. -->
 <style>
     body {background-color: #0f0f0f; color: white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
     h1 {color: magenta; text-align: center; font-family: 'Major Mono Display', monospace;}
@@ -21,10 +21,15 @@
         <h2>Overview</h2>
         <p>This week we are going to continue learning the fundamentals of HTML5 with a focus on page layout. We are also going to start work on assignment one, which is due <span style="color: cyan;"><b>Friday 28 October by 5 pm</b></span>.</p>
 
-        <p>Remember that all of these tutorials are designed so the source code implements what is presented. Make sure to view the source code of all tutorial pages to view how different techniques are implemented.</p>
+        <!-- Above I used a <span> element to be precise with color and do something different from the internal style indicated above. This can be as precise as changing even one letter -->
+
+        <p>Remember that all of these tutorials are designed so the source code implements what is presented. Make sure to view the source code of all tutorial pages to view how different techniques are implemented.</p> 
+
+        <!-- I am also including comments to explain what some things mean. If you see an element or tag you do not understand, look it up in the W3 Schools reference -->
 
         <h2>Recap</h2>
         <p>Last week we covered the following:</p>
+        <!-- Unordered list -->
         <ul>
             <li>HTML elements, including headings, paragraphs and lists</li>
             <li>Setting up an HTML document</li>
@@ -33,10 +38,14 @@
             <li>Adding links</li>
             <li>Adding images</li>
         </ul>
-        <p>Don't worry if you cannot remember the specific tags, terms, and syntax to use. This is normal. It is common to need to look up specifics in a reference guide or cheatsheet. The <a href="https://www.w3schools.com/html/html_basic.asp">W3 Schools HTML Basics</a> page provides a great summary. We will also review these again this week.</p>
+
+        <p>Don't worry if you cannot remember the specific tags, terms, and syntax to use. This is normal. It is common to need to look up specifics in a reference guide or cheatsheet. The <a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">W3 Schools HTML Basics</a> page provides a great summary. We will also review these again this week.</p>
+
+        <!-- See the link above that I created for W3 Schools. I use the target attribute to indicate to open the link as a new tab. If I did not include this, as in the link above for ./html_cc.asp, the page will open over the page and I will need to use the browser back button  to get back to this page -->
 
         <h2>HTML Page Layout</h2>
         <p>The layout of a simple HTML document is as follows:</p>
+        <!-- You don't need to know this for this assignment, but the code in this section shows the angle brackets. -->
         <code>&lt;!DOCTYPE html&gt;
             <br>&lt;html&gt;
             <br><br>&lt;body&gt;
@@ -47,9 +56,9 @@
         <p>Remember that HTML5 is hierarchical, which means content is organised as headings (h1 - h6) and paragraphs. These are indicated through tags. Some tags require start and end tags. Make sure to remember end tags. A code editor, like VSCode, may automatically create end tags, so pay attention that you don't accidentally have too many. Other tags like &lt;br&gt; and &lt;img&gt; are empty elements, which have no content and do not have end tags.</p>
 
         <h2>Attributes</h2>
-        <p>You may have noticed that when creating links or embedding images, you need to add information to the tag to indicate where to get or direct the relevant content. These are called <a href="https://www.w3schools.com/html/html_attributes.asp" target="blank">attributes</a>. The &lt;a&gt; is used to create hyperlinks, but your need to include the href attribute to indicate where the hyperlink goes to. These are always included in the start tag and generally come as name/value pairs, or as <strong>name="value"</strong></p>
+        <p>You may have noticed that when creating links or embedding images, you need to add information to the tag to indicate where to get or direct the relevant content. These are called <a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank">attributes</a>. The &lt;a&gt; is used to create hyperlinks, but your need to include the href attribute to indicate where the hyperlink goes to. These are always included in the start tag and generally come as name/value pairs, or as <strong>name="value"</strong></p>
         
-        <p title="W3 Schools">Here is a handy <a href="https://www.w3schools.com/tags/ref_attributes.asp">Attribute Reference</a></p>
+        <p title="W3 Schools">Here is a handy <a href="https://www.w3schools.com/tags/ref_attributes.asp" target="_blank">Attribute Reference</a></p>
         
         <h2>Exercises</h2>
         <p>Find your folder from last week and open in VSCode. Set up a new HTML document. Title it tutorial2.html. If you can't find your folder or if it was deleted, then create a new folder and save your page as index.html. We are going to use this to test out different attributes.</p>
@@ -63,7 +72,7 @@
             <li>Make hyperlink open in new page</li>
             <li>Challenge: Make an image a hyperlink</li>
         </ul>
-
+        <!-- I am including an image using relative url, which means I have the file in a folder called images that is with the HTML file -->
         <img src="images/ViralTime-1.gif">
         <p>Test your skills with these <a title="W3 Schools" href="https://www.w3schools.com/html/html_exercises.asp">exercises from W3 Schools</a>. Go as far as you feel comfortable.</p> 
 
@@ -79,7 +88,7 @@
             </ul>
             <p>Upload your html page to Moodle by <span style="color: cyan;"><b>Friday 28 October by 5 pm</b></span>. If you referencing images using relative links (that is, you are including images on your computer rather than on a website), make sure to include image file as well with your submission.</p> 
             <p><strong>Late submission will be penalised.</strong></p>
-            <p>We will be working on the pages within class for the next two weeks. If you want to work on your page outside of class, you can use a simple text editor for HTML documents (TextEdit on a Mac or Notepad on a PC) or download <a href="https://code.visualstudio.com/" target="blank">VSCode</a> on your home computer for free. You can save your assignment to a USB drive or upload to OneDrive in order to access it outside of class. <strong>In general, it is recommended that you back up all your work to OneDrive, since files may not be saved correctly on MacLab computers.</strong> You are also welcome to bring your own laptop to class if you prefer to use that.</p>
+            <p>We will be working on the pages within class for the next two weeks. If you want to work on your page outside of class, you can use a simple text editor for HTML documents (TextEdit on a Mac or Notepad on a PC) or download <a href="https://code.visualstudio.com/" target="_blank">VSCode</a> on your home computer for free. You can save your assignment to a USB drive or upload to OneDrive in order to access it outside of class. <strong>In general, it is recommended that you back up all your work to OneDrive, since files may not be saved correctly on MacLab computers.</strong> You are also welcome to bring your own laptop to class if you prefer to use that.</p>
 
             <p><a href="index.html">Return to Homepage</a></p>
     </body>
