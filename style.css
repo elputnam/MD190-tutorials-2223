@@ -13,4 +13,6 @@ h2 {
 }
 a {
     color: orchid;
+    border-bottom:1px dotted orchid;
+    float:left; 
 }
