@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MD190[A] Tutorial 7: Photo manipulation</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap"
+rel="stylesheet"
+/>
+
+        <style>
+        html {background-color: #0f0f0f; box-sizing: border-box; font-size: 16px;}
+        *, *:before, *:after {box-sizing: inherit;}
+        /* TYPOGRAPHY  */
+        body {margin: 0; color: white; font-family: sans-serif; line-height: 1.5;}
+        h1{color: #abff2e; font-size: 60px; font-family: 'Major Mono Display', monospace;}
+        h2{color: greenyellow; font-size: 40px; font-family: 'Syne Mono', monospace;}
+        h3{color: greenyellow;}
+        a{color: cyan; text-decoration: none; border-bottom: 1px dashed cyan;}
+        .caption{font-size: 12px;}
+        /* Boxes */
+        .hero {background-image: url("./images/Putnam-BurnOn-Performance-2023.jpg");background-size: cover; background-attachment: fixed; height: 50vh; width: 100%;}
+        .offer {width: 100%; padding: 20px 40px 50px 40px;}
+        .offer h1 {display: block;}
+        .text1 {width: 100%; padding: 40px; background-color: #690a59;}  
+        .text2 {width: 100%; padding: 40px; background-color: #0f0f0f;}
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 700px;
+        }
+        </style>
+    </head>
+
+    <body>
+       <!-- Header -->
+       
+        <div class="hero"></div>
+        <div class="offer">
+        <h1>MD190 Week 9 Tutorial</h1>
+    </div>
+    <div class="text1">
+        <h2>Manipulating Colour in Photoshop</h2>
+        <p>One effective way to change the mood of an image is to change its colour. There are various methods for changing image colour in Photoshop, some involve overall colour changes whiles others are more precise.</p>
+
+        <h3>Adjustment layers</h3>
+        <ul>
+        <li>Curves</li>
+        <li>Color Balance</li>
+        <li>Hue/Saturation</li>
+        <li>Photo Filter</li>
+        </ul>
+
+        <h3>Adding Colour</h3>
+        <ul>
+        <li>Add Solid Colour or Gradient Layer</li>
+        <li>Paintbrush tools on blank layer</li>
+        <li>Experiment with blending and opacity</li>   
+        </ul>
+        <p>We will be reviewing various techniques in class. More details can be found on the <a href="https://www.adobe.com/products/photoshop/change-color.html" title="Link to Adobe website, Change Color" target="_blank"> Adobe website.</a></p>
+    </div>
+    <div class="text2">
+        <h2>Digital Repair and Replication</h2>
+        <p>Another method for manipulating images in Photoshop is to replicate pixels, altering how the image appears. Such techniques are common for repairs and retouching, but can also be used for creating hoaxes or other misleading images. Such techniques take advantage of our trust in photographs as being "truth" and our belief photography's capacity to represent the world objectively in accurately.</p>
+
+        <p>When undertaking such replication work in Photoshop, make sure to create a new layer and selecting "Sample: All Layers" or to duplicate the background layer in order to preserve original. This process is referred to as non-destructive editing.</p>
+
+        <h3>Healing and Replication tools</h3>
+        <ul>
+            <li>fix-it paintbrush, corrects tones based on sample of nearby pixels</li>
+            <li>Clone Stamp: replicates selection of pixels. This involves a two step operation; first make selection and then repair</li>
+            <li>Healing Brush: combination of the Spot Healing Brush tool and the Clone Stamp tool; sample a source and tries to even out adjacent tones and blemishes based on nearby pixel information.</li>
+        
+            <p>Make sure to create a separate layer for each repair and name the layer with the appropriate edit. Repairs files typically include many layers for all different stages or sections of repairs. For more details, see <a href="https://helpx.adobe.com/ie/photoshop/using/retouching-repairing-images.html" title="Link to Adobe User Guide" target="_blank">Retouch and Repair Photos</a> in the Adobe User Guide or the Adobe tutorial <a href="https://helpx.adobe.com/photoshop/how-to/photo-retouching-basics.html" title="Link to Adobe Tutorial, Retouch Images" target="_blank">Retouch Images</a>.</p>
+        </ul>
+    </div>
+
+    <div class="text1">
+        <h2>Combining images</h2>
+        <p>Photoshop also enables more complex image combinations for the creation of surreal scenes and collages. This can be done by selecting elements from an image, masking them, adn then bringing them into a single file. For tips, see the tutorial <a href="https://helpx.adobe.com/ie/photoshop/how-to/compositing.html" title="Link to Adobe Tutorial" target="_blank">Combine images in Creative Ways</a> and <a href="https://helpx.adobe.com/ie/photoshop/using/making-selections.html" title="Link to Adobe User Guide" target="_blank">What is Selection in Photoshop?</a>on the Adobe Website.</p>
+        <p>Some points to keep in mind when combining images:</p>
+        <ul>
+            <li>Experiment with contrast and scale in compositions</li>
+            <li>Adjustment layers only effect the layers below them. You can be more precise with adjustment layer edits by using clipping masks.</li>
+            <li>Try using blending layers and play with opacity for different effects</li>
+            <li>Check that resolution of all images requires downsizing and not upsizing. If downloading material from the Internet, ensure that you are downloading the largest files sizes available.</li>
+        </ul>
+        <img src="./images/SpaceCollage-web.png" style="width:100%">
+        <p style="font-size: 12px; color: yellow;">Image credit: untitled montage by EL Putnam, 2022</p>
+    </div>
+
+    <div class="text2">
+        <h2>Optimising Images</h2>
+        <p>Image optimisation is necessary or uploading images to websites. It is important to optimise images to improve site performance and to ensure images look good. If images are too large, they take up too much storage space and slow down load times, which can cause people to leave site. If they are too small, images can appear distorted, which can undermine credibility. Make sure to size images that meet dimensions and orientation on website. This may involve making multiple versions on an image in different sizes. </p>
+        
+            <img src="./images/Image-Orientation-Guide.png" class="center" style="width: 75%">
+        <h3>File naming and type</h3>
+        <p>Name your file appropriately in a way that is clear and descriptive to improve search engine optimisation (SEO). For example, the image above is called Image-Orientation-Guide.png. Photoshop files (.psd) do not load on websites, so change to a web friendly format such as .jpg or .png.</p>
+
+    </div>
+
+    <div class="text1">
+        <h2>Assignment 2: Image Optimisation</h2>
+        <h3>Assignment Overview</h3>
+        <p>Using a photograph of your own that you have brought into Photoshop, tell a story with that one image. Add text in Photoshop and add fill/adjustment layers or filters. You can also create a collage using masks. Note that you can also include open source imagery if you are making a collage, but at least one image must be your own. Identify which image is your own in the layer name.</p>
+        <p>Save that image as a <b>.psd file</b> showing layers and then optimize it for web, saving a copy as a <b>.png file</b>. Place both the psd and the png in a folder, compress the folder to turn it into a zip file and then <b>upload that zipped file with both images to Moodle</b>. Please note that Moodle allows a maximum upload file size of 100 MB. If you are unable to upload for folder due to file size constraints, you may need to resize your .psd file prior to submitting. <b>Late submission will be penalised. Due Friday November 25 by 5 pm.</b></p>
+
+        <p>Note that Adobe offers a 7-day trial of Photoshop if you would like to work on the assignment using your own computer. Make sure to cancel your subscription, however, if you do not wish to pay for Adobe Creative Cloud. You can get a discounted student rate on Adobe Creative Cloud for the first year. This week's lab will be dedicated to working on assignment two, so make sure to start work on assignment (such as taking pictures that you can use) prior to coming to class. The Mac Lab is also available for you to use all day Friday in order to finish the assignment. Please note that you can use the Mac Lab to work on assignments whenever there is a class NOT in session.</p>
+
+        <h3>Assessment Criteria</h3>
+        <ul>
+            <li>Image saved correctly as both .psd with layers and separate .png file</li>
+            <li>.png version is optimised for web</li>
+            <li>Image displays technical competence: text added correctly, uses filters and fill/adjustment layers effectively, and (if applicable) combines images uses layers and masks. Layers will be visible and reviewed in the Photoshop file.</li>
+            <li>Content and concept of image conveys creative initiative and effort.</li>
+        </ul>
+
+        <h3>Check before submitting</h3>
+        <ul>
+            <li>Image saved as both .psd and .png files; both files are in zipped folder</li>
+            <li>File names are in accordance to the following format: LastName_IDnumber_assign2</li>
+            <li>.psd file contains layers</li>
+            <li>.png file is resized for web optimisation</li>
+        </ul>
+    </div>
+
+    <div class="text2"><a href="index.html">Return to homepage</a></div>
+    </body>
+</html>
