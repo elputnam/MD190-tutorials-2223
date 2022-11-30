@@ -23,10 +23,12 @@ a {
     text-decoration: none;
     border-bottom:1px dotted orchid; 
 }
+
 img {
     padding: 20px;
 }
 
+/* Classes */
 .cite {
     font-size: smaller;
     margin: -10px 10px 20px;
@@ -53,4 +55,9 @@ img {
     width: 100%; 
     padding: 40px; 
     background-color: #0f0f0f;
+}
+
+a:hover{
+    background-color: lightgoldenrodyellow;
+    color: darkorchid;
 }
