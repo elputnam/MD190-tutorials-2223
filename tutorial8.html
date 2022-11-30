@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MD190[A] Tutorial 8: CSS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+        <!-- banner -->
+        <div class="banner"></div>
+        <!-- header -->
+        <div class="header">
+            <h1>Week 10 Tutorial: Introduction to CSS</h1>
+        </div>
+        <div class="text1">
+            <h2>First things first</h2>
+            <p>Before we dive into CSS, we are going to set up a folder. Make sure to save your folder in a location that you can access again after you log out to this computer and it is recommended to back up a copy of your assignment on the cloud. When name your folder and files, use lower case letters, avoid spaces, and special characters to ensure everything that displays properly.</p>
+            <ol>
+                <li>Create folder, name it lastname-MD190-assign3. This is your root foler.</li>
+                <li>Within this folder create two more folders, one called css and one called images.</li>
+                <li>Now open VSCode and open your folder</li>
+                <li>Create new file called index.html. This will be your homepage. Whenever a site is hosted on a server, the index.html page is always the default home page. Other pages can have unique names, but home page is always called index.</li>
+                <li>In your css folder, create a new file called style.css in your </li>
+        
+            </ol>
+        </div>
+        <div class="text2">
+            <h2>What is CSS?</h2>
+            <p>CSS stands for <a href="https://www.w3schools.com/Css/css_intro.asp" title="Link to W3 Schools" target="_blank">Cascading Style Sheets</a>, which are used to describe how HTML elements are to be presented. CSS uses one document to style a whole website, saving a lot of work and time. As noted in the lecture, CSS separates content (HTML) from presentation, as it is a separate document that informs the style of the site.  Since first introduced in 1996, CSS has become a cornerstone of the web, with the capacity to include variations for site designs on different devices and screen sizes, layout websites, as well as introduce dynamic elements to static sites.</p>
+            <p>In short, CSS means that style is no longer in HTML (which it wasn't designed for anyway...).</p>
+            <p>For today's class, we will go over the creation of external style sheets, which you will start to do for your webpage. Then I will review some basic formatting and introduce the box model to begin page layout, which we will continue next week.</p>
+        </div>
+
+        <div class="text1">
+            <h2>CSS syntax</h2>
+            <p>A CSS ruleset (or simply rule) consists of a <b>selector</b> and a <b>declaration</b> block. Within the declaration block, there is a property and property value. As with HTML, syntax matters, so pay attention the use of curly brackets, spacing, colons, and semi-colons. </p>
+            <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png" alt="Image of CSS rule" width="50%">
+            <p class="cite">Image source: Mdn Web docs</p>          
+            <p>Overview of terms:</p> 
+            <ul>
+                <li><b>selector</b> is the HTML element(s) being styled</li> 
+                <li>the <b>declaration</b> is the rule</li> <li>the <b>property</b> is a way to style HTML element</li> 
+                <li>the <b>property value</b> is how it is being styled</li>
+            </ul>
+            <h3>More on Selectors</h3>
+            <p>CSS enables universal to precise changes to a website design, including styling all HTML elements or some, specific images, or even when a cursor hovers over a link.</p> <p>Here are some <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics#different_types_of_selectors" title="Link to Mdn Web Docs" target="_blank">selectors</a> that may be useful for you when designing your site:</p>
+            <ul>
+                <li>Element selector, tag, or type selector: all HTML elements of a specified type</li>
+                <li>ID selector: unique value assigned to element with specified ID</li>
+                <li>Class selector: creates a class for elements that can appear multiple times on same page</li>
+                <li>Pseudo-class selector: specified elements, but only in specific state like hovering or activated</li>
+                <li>Universal selector: applies to all elements; uses *</li>
+            </ul>
+        </div>
+        <div class="text2">
+            <h2>Style Fundamentals</h2>
+            <p>We have already begun experimenting with page style using inline and internal CSS with HTML documents, but now we are going to use these features as external CSS. Below are some links to fundamentals of style on W3 schools for your reference.</p>
+            <ul>
+                <li><a href="https://www.w3schools.com/css/css_colors.asp" title="Link to W3 Schools" target="_blank">Color</a></li>
+                <li><a href="https://www.w3schools.com/css/css_background.asp" title="Link to W3 Schools" target="_blank">Backgrounds</li>
+                <li><a href="https://www.w3schools.com/css/css_text.asp" title="Link to W3 Schools" target="_blank">Text</a></li>
+                <li><a href="https://www.w3schools.com/css/css_font.asp" title="Link to W3 Schools" target="_blank">Font</a></li>
+            </ul>
+        </div>
+        <div class="text1">
+            <h2>Box model</h2>
+            <p>CSS is based on a model of boxes, where each HTML element is considered as wrapped in a box. Boxes are divided into the following properties: padding (space around content), border (solid line around padding), and margin (space around outside of border). Adjusting these qualities will alter the spacing around your elements. You can include one, two, three, or four values. Inputting one value will apply to all sides of the box; when inputting two, the first will affect top and bottom while the second will affect right and left. You can also adjust these values to remove the automatic styling of elements.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Box-model.svg" width="512">
+            <p class="cite"><a href="https://commons.wikimedia.org/wiki/File:Box-model.svg">Charles Calvert</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</p>
+        </div>
+        <div class="text2"><a href="index.html">Return to Homepage</a></div>
+    </body>
+</html>
+
