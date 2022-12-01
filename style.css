@@ -1,20 +1,23 @@
-html {box-sizing: border-box;       
+/* Global */
+html {box-sizing: border-box;     
+     
     font-size: 16px;}
+    
         *, *:before, *:after {box-sizing: inherit;}
 
 body {
     background-color: #0f0f0f;
+    margin: 0px; 
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5;
 }
 h1 {
     color: white;
-    text-align: center;
     font-size: 50px;
     font-family: 'Josefin Sans', sans-serif;;
 }
-h2 {
+h2, h3 {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -28,12 +31,8 @@ img {
     padding: 20px;
 }
 
-/* Classes */
-.cite {
-    font-size: smaller;
-    margin: -10px 10px 20px;
-}
 
+/* Sections */
 .banner{
     background-image: url("./images/Putnam-FireflyBurnout.png");
     background-size: cover; 
@@ -41,10 +40,9 @@ img {
     height: 50vh;
     width: 100%;
 }
-
 .header {width: 100%; 
-    padding: 20px;}
-    
+    padding: 40px;}
+
 .text1{
     width: 100%; 
     padding: 50px; 
@@ -57,7 +55,36 @@ img {
     background-color: #0f0f0f;
 }
 
+/* Typography */
+.cite {
+    font-size: 12px;
+    margin: 10px 20px;
+    color: lightpink;
+}
+
 a:hover{
     background-color: lightgoldenrodyellow;
     color: darkorchid;
 }
+
+/* Buttons */
+.button{
+    border: none;
+    background-color:rgb(40, 40, 40);
+    color:yellow;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: orchid;
+    color: cyan;
+}
+.button:active{
+    filter: hue-rotate(240deg);
+}
+
