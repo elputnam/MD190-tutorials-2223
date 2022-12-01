@@ -22,7 +22,7 @@ h2, h3 {
 a {
     color: cyan;
     text-decoration: none;
-    border-bottom:1px dotted orchid; 
+    border-bottom:2px dashed orchid; 
 }
 
 img {
