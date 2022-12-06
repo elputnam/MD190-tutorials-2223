@@ -15,8 +15,9 @@ let y = 0;
 let reset1;
 
 function setup() {
-  canvas = createCanvas(windowWidth, 300);
+  canvas = createCanvas(windowWidth, 350);
   canvas.position(0, 50);
+  canvas.style('z-index', '-1');
   colorMode(HSB, 360, 100, 100, 100);
   frameRate(20);
   background(0);
