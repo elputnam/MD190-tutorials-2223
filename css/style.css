@@ -1,24 +1,30 @@
 /* Global */
-html {box-sizing: border-box;     
-     
-    font-size: 16px;}
-    
-        *, *:before, *:after {box-sizing: inherit;}
+
+/* Make sure to include the below html and universal rule sets in order to create the coloured band effect */
+
+html {
+    box-sizing: border-box;    
+} 
+
+*, *:before, *:after {box-sizing: inherit;} 
 
 body {
     background-color: #0f0f0f;
-    margin: 0px; 
+    margin: 0; 
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5;
 }
+
 h1 {
     font-size: 50px;
-    font-family: 'Josefin Sans', sans-serif;;
+    font-family: 'Josefin Sans', sans-serif;
 }
+
 h2, h3 {
     font-family: 'Josefin Sans', sans-serif;
 }
+
 a {
     color: cyan;
     text-decoration: none;
@@ -31,6 +37,8 @@ img {
 
 
 /* Sections */
+
+/* This class creates the background image at the top pf the page */
 .banner{
     background-image: url("../images/Putnam-FireflyBurnout.png");
     background-size: cover; 
@@ -38,18 +46,31 @@ img {
     height: 50vh;
     width: 100%;
 }
-.header {width: 100%; 
-    padding: 40px;}
 
-.text1{
+/* These header classes are used to style the page title */
+.header {
     width: 100%; 
-    padding: 50px; 
-    background-color: rgb(40, 40, 40);
+    padding: 40px;
 }
 
-.text2{
+.header2 {
     width: 100%; 
-    padding: 40px; 
+    padding: 40px;
+    margin-top: 40vh;
+    float: bottom;
+}
+
+/* Below are the classes for the alternating bands of colour */
+
+.text1 {
+    width: 100%; 
+    padding: 50px; 
+    background-color: rgb(61, 61, 61);
+}
+
+.text2 {
+    width: 100%; 
+    padding: 50px; 
     background-color: #0f0f0f;
 }
 
@@ -86,3 +107,33 @@ a:hover{
     filter: hue-rotate(240deg);
 }
 
+/* Menu bar */
+
+header{
+    /* position: sticky; */
+    width: 100%;
+    top: 0;
+}
+
+.bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  li a:hover {
+    background-color: white;
+    /* margin: 0; */
+  }

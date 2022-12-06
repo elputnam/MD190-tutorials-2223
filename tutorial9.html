@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>MD190[A] Tutorial 9: Page Layout</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet"> 
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+	    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script>
+	    <script type="text/javascript" src="js/sketch.js"></script>
+    </head>
+
+    <header>
+        <ul class="bar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tutorial1.html">HTML</a></li>
+            <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+            <li><a href="https://blog.adobe.com/en/publish/2022/02/02/how-to-optimize-images-for-your-website">Images</a></li>
+            <li><a href="#assign3">Project</a></li>
+        </ul>
+    </header>
+    <body>
+        <div class="header2">
+            <h1>Week 11 Tutorial: Page Layout</h1>
+        </div>
+        <div class="text1">
+            <h2>Layout with White Space</h2>
+            <p>Recall from <a href="tutorial8.html" title="Link to tutorial 8" target="_blank">last week</a> that CSS uses the box model. Every HTML is wrapped in a box with padding, a border, and margin.</p>
+            <img src="./images/BoxModel.png" alt="Graphic of CSS box model">
+            <p>One effective way to add white space to a website is to manipulate the <a href="https://www.w3schools.com/css/css_padding.asp" title="Link to W3 Schools" target="_blank">padding</a> and <a href="https://www.w3schools.com/css/css_margin.asp" title="Link to W3 Schools" target="_blank">margins</a> of an element. These process can involve even distribution of spacing (using one value), or customised differences on all 4 sides.</p>
+            <p>Another effective way to layout the page and use white is to use the <a href="https://www.w3schools.com/tags/tag_div.ASP" title="Link to W3 Schools" target="_blank">div element</a>. The div element function as a container that is stylised using CSS classes. For instance, on this page, I use the div element to create different coloured bands to organise and present content. If you look at the <a href="https://github.com/elputnam/MD190-tutorials-2223/blob/main/css/style.css" title="Link to GitHub" target="_blank">style sheet</a> for this site, you can see how I used the classes "text1" and "text2" to create the alternating bands. I then call the classes in the <a>HTML tags</a>.</p>
+        </div>
+        <div class="text2">
+            <h2>Navigation bar</h2>
+        </div>
+        <div class="text1">
+            <h2>Flexbox</h2>
+        </div>
+        <div class="text2" id="assign3">
+            <h2>Final Project</h2>
+        </div>
+    </body>
+</html>
