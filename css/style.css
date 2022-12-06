@@ -109,7 +109,8 @@ a:hover{
 
 /* Menu bar */
 
-header{
+/* Uncomment the rule for position in the header ruleset in order to make a sticky navigation bar */
+header {
     /* position: sticky; */
     width: 100%;
     top: 0;
