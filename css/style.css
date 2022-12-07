@@ -1,9 +1,10 @@
 /* Global */
 
-/* Make sure to include the below html and universal rule sets in order to create the coloured band effect */
+/* Make sure to include the below html and universal rule sets in order to create the coloured band effect. More on what box-sizing means here: https://www.w3schools.com/css/css3_box-sizing.asp */
 
 html {
-    box-sizing: border-box;    
+    box-sizing: border-box;   
+    overflow-x: hidden;
 } 
 
 *, *:before, *:after {box-sizing: inherit;} 
@@ -11,6 +12,7 @@ html {
 body {
     background-color: #0f0f0f;
     margin: 0; 
+    padding: 0;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5;
@@ -52,15 +54,15 @@ footer {
 }
 
 /* These header classes are used to style the page title */
-.header {
+.title1 {
     width: 100%; 
     padding: 40px;
 }
 
-.header2 {
+.title2 {
     width: 100%; 
-    padding: 40px;
-    margin-top: 35vh;
+    padding: 20px 40px 0px 40px ;
+    margin-top: 40vh;
     float: bottom;
 }
 
@@ -128,7 +130,7 @@ header {
     background-color: #333;
 }
   
-li a {
+.nav-buttons {
     float: left;
     display: block;
     color: white;
@@ -138,7 +140,42 @@ li a {
     border-bottom: none;
   }
 
-  li a:hover {
+  .nav-buttons:hover {
     background-color: white;
     /* margin: 0; */
   }
+
+  /* Flexbox */
+  .container {
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: dashed 4px yellow;
+  }
+
+  .flex-item {
+    flex: 1 1 200px;
+    padding-right: 20px;
+  }
+
+/* Special styles */
+
+.margin-display {
+    background-color: white;
+    border: solid 2px red;
+    margin: 20px;
+    padding: 0;
+    color: #222222;
+    text-align: center;
+}
+
+.padding-display{
+    background-color: white;
+    border: solid 2px red;
+    padding: 20px;
+    margin: 0;
+    color: #222222;
+    text-align: center;
+}
