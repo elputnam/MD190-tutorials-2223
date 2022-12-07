@@ -157,7 +157,7 @@ header {
 
   .flex-item {
     flex: 1 1 200px;
-    padding-right: 20px;
+    padding: 20px;
   }
 
 /* Special styles */
