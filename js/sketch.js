@@ -14,8 +14,9 @@ let x = 0;
 let y = 0;
 let reset1;
 
+
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight/3);
+  canvas = createCanvas(windowWidth, 250);
   canvas.position(0, 50);
   canvas.style('z-index', '-1');
   colorMode(HSB, 360, 100, 100, 100);
@@ -82,8 +83,7 @@ this.display = function(){
 
 function windowResized() {
   //console.log('resized');
-  resizeCanvas(windowWidth, 300);
-//   background(0);
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 
