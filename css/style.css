@@ -150,13 +150,13 @@ header {
     border-bottom: none;
   }
 
-  .nav-buttons:hover {
+.nav-buttons:hover {
     background-color: white;
     /* margin: 0; */
   }
 
-  /* Flexbox */
-  .container {
+/* Flexbox */
+.container {
     display: inline-flex;
     width: 100%;
     flex-wrap: wrap;
