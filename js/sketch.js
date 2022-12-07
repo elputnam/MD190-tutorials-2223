@@ -83,7 +83,7 @@ this.display = function(){
 
 function windowResized() {
   //console.log('resized');
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth, 250);
 }
 
 
