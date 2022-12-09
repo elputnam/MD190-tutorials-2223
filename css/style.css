@@ -2,6 +2,8 @@
 
 /* You are welcome to use code from this page in your site, but please modify and remix in order to make it your own! */
 
+/* This style sheet is used on the pages for tutorial 8 and 9, so the classes in hear are called on both of these pages in different instances, I have linked the source code for tutorial nine on the page, but you can also use inspect page source to see how classes are used. */
+
 /* Make sure to include the below html and universal rule sets in order to create the coloured band effect. More on what box-sizing means here: https://www.w3schools.com/css/css3_box-sizing.asp */
 
 html {
@@ -10,6 +12,9 @@ html {
 } 
 
 *, *:before, *:after {box-sizing: inherit;} 
+
+/* ---------- */
+
 
 body {
     background-color: #0f0f0f;
@@ -29,18 +34,20 @@ h2, h3 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+/* Custom designed hyperlinks */
 a {
     color: cyan;
     text-decoration: none;
     border-bottom:2px dashed orchid; 
 }
 
+
 img {
-    padding: 20px;
+    margin: 20px;
 }
 
 .img2 {
-    padding: 5px;
+   padding: 5px;
 }
 
 footer {
@@ -54,7 +61,7 @@ footer {
 
 /* Sections */
 
-/* This class creates the background image at the top pf the page */
+/* This class creates the background image at the top of the page in  */
 .banner{
     background-image: url("../images/Putnam-FireflyBurnout.png");
     background-size: cover; 
@@ -63,7 +70,7 @@ footer {
     width: 100%;
 }
 
-/* These header classes are used to style the page title */
+/* These title classes are used to style the page title. */
 .title1 {
     width: 100%; 
     padding: 40px;
@@ -90,12 +97,14 @@ footer {
     background-color: #0f0f0f;
 }
 
-/* Typography */
+/* Typography: special cases */
+
 .cite {
     font-size: 12px;
     margin: 10px 20px;
     color: lightpink;
 }
+
 
 a:hover{
     background-color: lightgoldenrodyellow;
@@ -103,6 +112,8 @@ a:hover{
 }
 
 /* Buttons */
+
+/* The code for buttons below are used to create buttons on tutorial 8 (Intro to CSS) */
 .button{
     border: none;
     background-color:rgb(40, 40, 40);
@@ -123,7 +134,7 @@ a:hover{
     filter: hue-rotate(240deg);
 }
 
-/* Menu bar */
+/* Menu/Navigation bar */
 
 /* Uncomment the rule for position in the header ruleset in order to make a sticky navigation bar */
 header {
@@ -170,7 +181,7 @@ header {
     padding: 20px;
   }
 
-/* Special styles */
+/* Special styles to demo difference between margin and padding in tutorial 9 (page layout)*/
 
 .margin-display {
     background-color: white;
